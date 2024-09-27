@@ -41,6 +41,7 @@ function App() {
 
 
 
+
   const handelChange = (e) =>{
     setLength(e.target.value)
   }
@@ -57,7 +58,9 @@ function App() {
         <label>length : {length}</label>
 
       </div>
-      <div className="flex items-center gap-x-1">
+        <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 rounded-full mt-5' onClick={passwordGenrater}>Genrate New Password</button>
+      
+      <div className="flex items-center mt-5 gap-x-1">
         <input type="checkbox" defaultChecked={setNumberAllowed} onChange={()=>{setNumberAllowed((perv)=>!perv)}}/>
         <label>Numers</label>
       </div>
